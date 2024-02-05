@@ -1,0 +1,34 @@
+.testimony {
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.testimony > span {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.testimony > div {
+  position: relative;
+}
+
+.testimony > div > span {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+.testimony > p {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.testimony > div > img {
+  width: 50px
+}
