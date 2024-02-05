@@ -1,5 +1,5 @@
 .highlights {
-  height: 715px;
+  min-height: 715px;
 }
 
 .highlights > section {
