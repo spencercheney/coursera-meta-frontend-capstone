@@ -1,0 +1,53 @@
+.specials {
+  background-color: #EDEFEE;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+.specials > img {
+  width: 100%;
+}
+
+.specials > div {
+  padding: 20px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.specials > div > span {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+.specials > div > .title {
+  font-size: 18px;
+}
+
+.specials > div > .price {
+  color: #EE9972;
+  float: right;
+  font-size: 16px;
+}
+
+.specials > div > div {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #495E57;
+}
+
+.specials > div > a {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.specials > div > a > img {
+  width: 16.6px;
+  margin-left: 5px;
+}

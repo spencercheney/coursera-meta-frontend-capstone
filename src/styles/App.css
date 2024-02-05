@@ -6,6 +6,7 @@ a {
 a:hover {
   text-decoration: underline;
   font-style: italic;
+  cursor: pointer;
 }
 
 p {

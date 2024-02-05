@@ -1,0 +1,25 @@
+.highlights {
+  height: 715px;
+}
+
+.highlights > section {
+  padding-top: 87px;
+  padding-bottom: 87px;
+  position: relative;
+}
+
+.highlights > section > h1 {
+  display: inline;
+}
+
+.highlights > section > button {
+  position: absolute;
+  right: 0;
+}
+
+.highlights > section > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+}
