@@ -1,3 +1,4 @@
+import "./styles/Nav.css"
 import logo from "./images/Logo .svg"
 
 export default function Nav() {

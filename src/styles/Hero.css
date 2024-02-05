@@ -1,0 +1,43 @@
+.hero {
+  background-color: #495E57;
+}
+
+.hero > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 366px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero > section > div > img {
+  max-width: 100%;
+  max-height: 100%;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero > section > span {
+  position: relative;
+}
+
+.hero > section > span > h1 {
+  color: #F4CE14;
+}
+
+.hero > section > span > h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero > section > span > p {
+  color: white;
+}
+
+.hero > section > span > button {
+  position: absolute;
+  bottom: 0px;
+}
