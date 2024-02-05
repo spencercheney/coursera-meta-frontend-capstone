@@ -1,16 +1,14 @@
-import Hero from "./content/Hero"
-import Highlights from "./content/highlights/Highlights"
-import Testimonials from "./content/testimonials/Testimonials"
-import About from "./content/About"
-import "./styles/Main.css"
+import { Route, Routes } from "react-router-dom"
+import BookingPage from "./BookingPage"
+import HomePage from "./homepage/HomePage"
 
 export default function Main() {
   return (
     <main>
-      <Hero/>
-      <Highlights/>
-      <Testimonials/>
-      <About/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/booking" element={<BookingPage/>}/>
+      </Routes>
     </main>
   )
 }
