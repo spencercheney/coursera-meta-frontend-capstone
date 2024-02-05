@@ -6,7 +6,7 @@ export default function Testimony({children, rating, image, name}) {
       <span>Rating - {rating}</span>
       <br/><br/>
       <div>
-        <img src={image}/>
+        <img src={image} alt={"picture of " + name}/>
         <span>{name}</span>
       </div>
       <br/>

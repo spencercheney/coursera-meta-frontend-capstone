@@ -15,7 +15,7 @@ export default function Hero() {
           <Button onClick={() => console.log("test")}>Reserve a Table</Button>
         </span>
         <div>
-          <img src={food}></img>
+          <img src={food} alt="some of the food served at the Little Lemon"></img>
         </div>
       </section>
     </article>

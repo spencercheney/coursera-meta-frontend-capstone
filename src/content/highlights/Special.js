@@ -11,9 +11,9 @@ export default function Special({children, image, name, price}) {
   function toPrice(num) {
     var string = num.toString()
     var decimalIndex = string.indexOf(".")
-    if(decimalIndex == -1) {
+    if(decimalIndex === -1) {
       string += ".00"
-    } else if(decimalIndex != string.length - 3) {
+    } else if(decimalIndex !== string.length - 3) {
       string += "0"
     }
     return "$" + string
@@ -21,14 +21,14 @@ export default function Special({children, image, name, price}) {
 
   return (
     <div className="specials">
-      <img src={image}/>
+      <img src={image} alt={"picture of " + name}/>
       <div>
         <span className="title">{name}</span>
         <span className="price">{toPrice(price)}</span>
         <div>{children}</div>
-        <a>
+        <a href="/#">
           Order a Delivery
-          <img src={delivery}/>
+          <img src={delivery} alt="delivery icon"/>
         </a>
       </div>
     </div>
