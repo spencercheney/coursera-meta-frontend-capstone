@@ -14,7 +14,7 @@
 }
 
 .bookingPage section button {
-  margin-top: 40px;
+  margin-top: 0px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

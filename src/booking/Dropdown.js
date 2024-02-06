@@ -3,7 +3,7 @@ import "../styles/Dropdown.css"
 import { useEffect, useRef, useState } from "react"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
-export default function Dropdown({label, icon, name, options, isDate}) {
+export default function Dropdown({label, icon, name, options, isDate, setter}) {
   const [showOptions, setShowOptions] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedDate, setSelectedDate] = useState(null)
@@ -32,7 +32,15 @@ export default function Dropdown({label, icon, name, options, isDate}) {
         setText(selectedOption)
       }
     }
-  }, [selectedOption, showOptions, selectedDate, name])
+  }, [selectedOption, showOptions, selectedDate, name, isDate])
+
+  useEffect(() => {
+    if(isDate) {
+      setter(selectedDate)
+    } else {
+      setter(selectedOption)
+    }
+  }, [isDate, selectedDate, selectedOption, setter])
 
   function open(e) {
     e.preventDefault()

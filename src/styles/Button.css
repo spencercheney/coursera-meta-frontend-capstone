@@ -12,3 +12,12 @@
   cursor: pointer;
   background-color: #dbba13;
 }
+
+.disabled {
+  background-color: #5a4c08;
+}
+
+.disabled:hover {
+  cursor: default;
+  background-color: #5a4c08;
+}
