@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import BookingPage from "./BookingPage"
+import BookingPage from "./booking/BookingPage"
 import HomePage from "./homepage/HomePage"
+import "./styles/Main.css"
 
 export default function Main() {
   return (

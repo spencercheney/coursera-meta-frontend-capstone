@@ -1,0 +1,21 @@
+.bookingPage section {
+  margin: 20px 0;
+}
+
+.bookingPage section div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bookingPage section div img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.bookingPage section button {
+  margin-top: 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

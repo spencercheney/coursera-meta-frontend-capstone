@@ -1,0 +1,30 @@
+.bookingForm {
+  background-color: #495E57;
+  padding: 20px 0;
+}
+
+.bookingForm section h1 {
+  color: #F4CE14;
+}
+
+.bookingForm section form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30px 1fr 1fr;
+  gap: 20px;
+  color: white;
+  margin-top: 30px;
+}
+
+.bookingForm section form .seating {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bookingForm section form .seating input {
+  width: fit-content;
+  height: fit-content;
+}

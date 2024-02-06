@@ -1,0 +1,69 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown span {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.dropdown > button {
+  border-radius: 8px;
+  width: 100%;
+  color: #495E57;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  border: 1px solid black;
+  padding: 25px 0;
+  position: relative;
+  box-shadow: 0 2px black;
+  margin-bottom: 5px;
+}
+
+.dropdown > button:hover {
+  cursor: pointer;
+}
+
+.dropdown > button .left {
+  position: absolute;
+  left: 25px;
+}
+
+.dropdown > button .right {
+  position: absolute;
+  right: 25px;
+}
+
+.dropdown .options {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.dropdown .options button {
+  width: 100%;
+  color: #495E57;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  border: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid black;
+  border-style: dashed;
+}
+
+.dropdown input {
+  position: relative;
+  z-index: -1;
+  bottom: 25px;
+}
+
+.dropdown input::-webkit-datetime-edit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
